@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+:root {
+    --cor1: #fe4a49;;
+    --cor2: #504021;
+    --cor3: #00ddff7a;
+    --cor4: #fdca40;
+    --cor5: #1d3461;
+
+    --font-base: Arial, Helvetica, sans-serif;
+    --font-pirata: "Pirata One", system-ui;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--font-base);
+    background-color: var(--cor3);
+}
+
+header {
+    background-image: url(../Imagens/One\ Piece-l.jpg);
+    background-size: cover;
+    background-position:center top;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%; 
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1500px) {
+    header {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        height: 20vh;
+    }
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1200px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
+    margin-bottom: 100px;
+}
+
+main h1.goat {
+    color: var(--cor5);
+    font-family: var(--font-pirata);
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    
+}
+
+main h2 {
+    color: var(--cor2);
+    font-family: var(--font-pirata);
+    padding: 30px;
+    font-size: 2.5em;
+    text-indent: 15px;
+    margin-top: 20px;
+}
+
+main p {
+    line-height: 2em;
+    margin: 15px;
+    text-indent: 30px;
+    font-size: 1.1em;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+main a::after {
+    content: "\00A0\1F517\00A0";
+}
+
+main a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    padding: 2px 5px;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+main u {
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+}
+
+main strong {
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+main > article > ul {
+    list-style-position: inside;
+    padding: 20px;
+    line-height: 2em;
+    font-size: 1.1em;
+    background-color: var(--cor4);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    min-width: 100%;
+    border-radius: 10px;
+}
+    
+aside {
+    background-color: var(--cor4);
+    border-radius: 10px;
+}
+
+aside h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 20px;
+    background-color: var(--cor2);
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+    padding: 20px;
+    line-height: 2.2em;
+    font-size: 1.1em;
+}
+
+footer {
+    background-image: linear-gradient(to top, var(--cor5), #00ddff);
+    padding: 30px;
+    text-align: center;
+    font-size: 1.1em;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.308);
+}
+
+footer p {
+    color: white;
+    line-height: 2em;
+}
+
+.forte {
+    color: #ff2121;
+}
+
+footer strong {
+    color: var(--cor1);
+}
+
+footer u {
+    color: black;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px 0px 3px 3px;
+    font-size: 1.2em;
+}
+
+nav a {
+    color: var(--cor3);
+    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+    transition: .5s;
+}
+
+nav a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+
+
+
+
