@@ -83,7 +83,8 @@ body {
 
 /* Header */
 .header {
-    background-color: var(--blue-950);
+    background: linear-gradient(to bottom, var(--blue-500), var(--blue-900));
+    /* background-color: var(--blue-700); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,7 +100,7 @@ body {
     background-color: var(--yellow-400);
     width: 100%;
     padding: 10px;
-
+    box-shadow: 0 0 17px var(--shade-effect-50);
 }
 
 .header__link {
@@ -123,6 +124,7 @@ body {
     margin: 15px 10px;
 }
 
+/* Characters Section */
 .characters__subtitle {
     color: var(--yellow-600);
 }
@@ -152,15 +154,21 @@ body {
     font-weight: bold;
 }
 
-.link {
-    color: var(--red-400);
-    transition: all 0.3s ease-in;
-}
-
-.link:hover {
+/* Curiosities Section */
+.curiosities__title {
     color: var(--red-600);
 }
 
+.curiosities__list {
+    margin: 15px 25px;
+}
+
+.curiosities__description {
+    margin: 5px;
+    padding: 0;
+}
+
+/* Footer */
 .footer {
     background-color: var(--neutral-950);
     color: var(--neutral-50);
@@ -221,4 +229,13 @@ p {
 
 strong {
     color: var(--blue-400);
+}
+
+.link {
+    color: var(--red-400);
+    transition: all 0.3s ease-in;
+}
+
+.link:hover {
+    color: var(--red-700);
 }
