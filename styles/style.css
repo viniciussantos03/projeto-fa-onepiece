@@ -52,6 +52,9 @@
     --yellow-900: #7b3306;
     --yellow-950: #461901;
 
+    --shade-effect-50: #3f3f4670;
+    --shade-effect-100: #09090b81;
+
     /* Fonts */
     --lexend-font: "Lexend", sans-serif;
     --bricolage-grotesque-font: "Bricolage Grotesque", sans-serif;
@@ -75,6 +78,7 @@
 body {
     scroll-behavior: smooth; /* Smooth Scroll */
     font-family: var(--saira-font);
+    background-color: var(--neutral-200);
 }
 
 /* Header */
@@ -112,4 +116,65 @@ body {
     color: var(--yellow-50);
     font-size: 1.35em;
     border-radius: 12px;
+}
+
+/* Main Content */
+.card {
+    margin: 15px 10px;
+}
+
+.characters__subtitle {
+    color: var(--yellow-600);
+}
+
+.characters__figure {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.characters__image {
+    border-radius: 17px;
+    margin: 15px 0;
+    box-shadow: 0 0 16px var(--shade-effect-50);
+    width: 75vw;
+    transition: all 0.5s ease;
+}
+
+.characters__image:hover {
+    box-shadow: 0 0 24px var(--shade-effect-100);
+    transform: scale(1.1);
+}
+
+.characters__caption {
+    color: var(--yellow-700);
+    font-weight: bold;
+}
+
+.link {
+    color: var(--red-400);
+    transition: all 0.3s ease-in;
+}
+
+.link:hover {
+    color: var(--red-600);
+}
+
+
+/* Generic Styles Tags */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--bricolage-grotesque-font);
+    margin-top: 15px;
+}
+
+p {
+    margin: 16px 10px;
+}
+
+strong {
+    color: var(--blue-400);
 }
