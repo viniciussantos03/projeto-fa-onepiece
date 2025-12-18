@@ -161,6 +161,50 @@ body {
     color: var(--red-600);
 }
 
+.footer {
+    background-color: var(--neutral-950);
+    color: var(--neutral-50);
+    padding: 25px 5px;
+}
+
+.footer__item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__sub-item {
+    text-align: center;
+}
+
+.footer__subtitle {
+    font: bold 2em var(--outfit-font);
+    margin: 0;
+    padding: 0;
+}
+
+.footer__subtitle--social {
+    color: var(--yellow-700);
+}
+
+.footer__subtitle--projects {
+    color: var(--red-700);
+}
+
+.footer__link {
+    color: var(--neutral-50);
+    font: normal 1em var(--archivo-font);
+    text-decoration: none;
+    transition: all 0.5s ease;
+    display: block;
+    padding: 10px 16px;
+}
+
+.footer__link:hover {
+    color: var(--neutral-800);
+    background-color: var(--neutral-50);
+    border-radius: 12px;
+}
+
 
 /* Generic Styles Tags */
 h1,
