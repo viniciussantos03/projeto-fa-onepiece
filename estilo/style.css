@@ -29,9 +29,9 @@ header {
     position: relative;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     header {
-        height: 400px;
+        height: 250px;
     }
 }
 
