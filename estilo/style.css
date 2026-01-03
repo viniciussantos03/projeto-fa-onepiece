@@ -23,16 +23,9 @@ body {
 
 header {
     background: #00ddff7a url('../Imagens/One\ Piece.jpg') no-repeat center center / cover;
-    display: block;
-    height: 500px;
+    height: 40vw;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
-    position: relative;
-}
-
-@media (max-width: 768px) {
-    header {
-        height: 250px;
-    }
+    max-width: 100vw;
 }
 
 main {
